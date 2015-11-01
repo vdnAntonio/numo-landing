@@ -1,0 +1,334 @@
+ <body data-spy="scroll" data-offset="0" data-target="#theMenu" ng-controller="mainController">
+		
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo" style="color: #f85c37"><a href="index.html#home">Numo</a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#home" class="smoothScroll">Home</a>
+			<a href="#services" class="smoothScroll">Services</a>
+			<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			<a href="#about" class="smoothScroll">About</a>
+			<a href="#contact" class="smoothScroll">Contact</a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-envelope"></i></a>
+		</div>
+		
+		<!-- Menu button -->
+		<!-- <div id="menuToggle"><i class="icon-reorder"></i></div> -->
+	</nav>
+
+
+	
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<!-- <div class="navbar navbar-default">
+        		
+      		</div> -->
+			<br>
+			<h1 style="color:#f85c37">{{ titlePage }}</h1>
+			<h2 style="color:#f85c37">Community of creators</h2>
+			<div class="row">
+				<br>
+				<br>
+				<br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<!-- ========== WHITE SECTION ========== -->
+	<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div row="row">
+						<!-- <a class="navbar-brand" id="navbar-brand" href="http://www.nmu.org.ua/ua/"> --><!-- </a> -->
+						<img class="pull-left img-circle" src="assets/img/nmu (1).png" width="120" height="70"><h3 style="padding: 12px;"> With the support of the National Mining University</h3>
+					</div>
+				<!-- <h3>WELCOME TO THE <bold>WEB SITE</bold> <bold>NUMO.</bold> <br/>
+					WE ARE NOT <bold>MASONS</bold> BUT ALSO COOL.
+				</h3> -->
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+
+	<!-- ========== table - DARK GREY SECTION ========== -->
+	 <div class="container">
+		<div class="row">
+			<div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+				<ul class="event-list">
+					<li ng-repeat="event in events | orderBy:'-day'">
+						<time datetime="2014-07-20 0000">
+							<span class="day">{{ event.day }}</span>
+							<span class="month">{{ event.month }}</span>
+						</time>
+						<img alt="Independence Day" ng-src='{{event.img_url}}' />
+						<div class="info">
+							<h2 class="title">{{ event.title }}</h2>
+							<p class="desc">{{ event.intro }}</p>
+							<ul>
+								<li style="width:50%;"><a href="#/home/{{event.$id}}" ng-click=""><span class="fa fa-globe"></span> Details</a></li><!-- href="#/home/{{event.title}}" -->
+								<li style="width:50%;"><span class="fa fa-money"></span> free</li>
+							</ul>
+						</div>
+						<div class="social">
+							<ul>
+								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-vk"></span></a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ========== WHITE SECTION ========== -->
+	<div id="w">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h3>WE WORK HARD TO DELIVER A <bold>HIGH QUALITY SERVICE</bold>. OUR AIM IS YOUR COMPLETE <bold>SATISFACTION</bold>.
+				</h3>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /w -->
+	
+	<!-- ========== ABOUT - GREY SECTION ========== -->
+	<section id="about" name="about"></section>
+	<div id="g">
+		<div class="container">
+			<div class="row">
+				<h3 style="color:#f85c37">ABOUT NUMO</h3>
+				<br>
+				<br>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+				<p>1. Comfortable workplaces for a productive and creative atmosphere for you and your team. <br>
+					2. Separate areas for brainstorming and discussing ideas. <br>
+					3. A space for relaxing and having leisurely conversations with like-minded people.<br>
+					4. AND FINALLY! There are trainings, workshops, hackathons, and many more incredible events.<br>
+					340 square meters in the heart of Dnipropetrovsk will be a place for personal and professional development, which is open to everyone!
+				</p>
+				<br>
+				<br>
+				</div>
+				<div class="col-lg-2"></div>
+				<div class="row">
+					<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team001.jpg" height="90" width="90">
+					<h4>Olga Shmygovskaya</h4>
+					<h5><i>Stop Dreaming. Just DO it!</i></h5>
+					<p>DNU. Honchar, FME, Personnel Management and Labour Economics.</p>
+					<p>
+						<a href="http://vk.com/id11989876"><i class="fa fa-vk"></i></a>
+					</p>
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team002.jpg" height="90" width="90">
+					<h4>Nastya Scherban</h4>
+					<h5><i>"Каждое мгновенье жизни — еще одна возможность."</i></h5>
+					<p>NMU, Financial and Economic Faculty, Department of Marketing.</p>
+					<p>
+						<a href="http://www.facebook.com/semko.nas"><i class="fa fa-facebook"></i></a>
+					</p>
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team003.jpg" height="90" width="90">
+					<h4>Anastasia Konovalova</h4>
+					<h5><i>"Сделай так, чтобы получить то, что ты хочешь, иначе тебе придётся любить то, что ты имеешь."</i></h5>
+					<p>DNU. Honchar.</p>
+					<p>
+						<a href="http://vk.com/konovalova_ana"><i class="fa fa-vk"></i></a>
+						<a href="https://www.facebook.com/profile.php?id=100006397921391"><i class="fa fa-facebook"></i></a>
+					</p>
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team004.jpg" height="90" width="90">
+					<h4>Crusty Nasty</h4>
+					<h5><i>Young Blood, NS "Нет границ, кроме тех, что мы устанавливаем себе сами."</i></h5>
+					<p>DNU. Honchar. Philosophy.</p>
+					<p>
+						<a href="https://www.facebook.com/crustynasty "><i class="fa fa-facebook"></i></a>
+					</p>
+				</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team005.jpg" height="90" width="90">
+					<h4>Natalia Ermak</h4>
+					<h5><i>Quocunque Jeceris Stabit</i></h5>
+					<p>SPACE, architecture faculty</p>
+
+					<p>
+						<a href="index.html#"><i class="fa fa-facebook"></i></a>
+					</p>
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team006.png" height="90" width="90">
+					<h4>Anton Ukhlin</h4>
+					<h5><i>CEO NUMO</i></h5>
+					<p>National Mining University, System Analysis and Control.</p>
+					<p>
+						<a href="https://www.facebook.com/antonio.ukhlin"><i class="fa fa-facebook"></i></a>
+					</p>
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team007.JPG" height="90" width="90">
+					<h4>Tim Gates</h4>
+					<h5><i>Back-end Guru</i></h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<p>
+						<a href="index.html#"><i class="icon-facebook"></i></a>
+						<a href="index.html#"><i class="icon-twitter"></i></a>
+						<a href="index.html#"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team008.jpg" height="90" width="90">
+					<h4>Tim Gates</h4>
+					<h5><i>Back-end Guru</i></h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<p>
+						<a href="index.html#"><i class="icon-facebook"></i></a>
+						<a href="index.html#"><i class="icon-twitter"></i></a>
+						<a href="index.html#"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team009.jpg" height="90" width="90">
+					<h4>Tim Gates</h4>
+					<h5><i>Back-end Guru</i></h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<p>
+						<a href="index.html#"><i class="icon-facebook"></i></a>
+						<a href="index.html#"><i class="icon-twitter"></i></a>
+						<a href="index.html#"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team010.jpg" height="90" width="90">
+					<h4>George Zamza</h4>
+					<h5><i>L'art c'est moi!</i></h5>
+					<p>DNU. Department of English Philology.</p>
+					<p>
+						<a href="http://vk.com/id245691919"><i class="fa fa-vk"></i></a>
+						<a href="index.html#"><i class="icon-twitter"></i></a>
+						<a href="index.html#"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team011.jpg" height="90" width="90">
+					<h4>Tim Gates</h4>
+					<h5><i>Back-end Guru</i></h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<p>
+						<a href="index.html#"><i class="icon-facebook"></i></a>
+						<a href="index.html#"><i class="icon-twitter"></i></a>
+						<a href="index.html#"><i class="icon-envelope"></i></a>
+
+					</p>
+				</div>
+
+
+				<div class="col-lg-3 team">
+					<img class="img-circle" src="assets/img/team012.jpg" height="90" width="90">
+					<h4>Anton Vdovin</h4>
+					<h5><i>Angular ninja</i></h5>
+					<p>National Mining Univercity, software Engineering</p>
+					<p>
+						<a href="https://www.facebook.com/vdovin.antonio"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/VdovinAnton92"><i class="fa fa-twitter"></i></a>
+					</p>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /g -->
+	
+	<!-- ========== FOOTER SECTION ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+					<h3 style="color:#f85c37"><b>CONTACT US</b></h3>
+					<br>
+					<div class="col-lg-4">
+						<h3><b>Send Us A Message:</b></h3>
+						<h3>mmail@smtp.com</h3>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">	
+						<h3><b>Call Us:</b></h3>
+						<h3>+55 3984-4389</h3>
+						<br>
+					</div>
+					
+					<div class="col-lg-4">
+						<h3><b>We Are Social</b></h3>
+						<p>
+							<a href="https://www.facebook.com/NUMO-Dnipro-814086412023488/"><i class="fa fa-facebook"></i></a>
+							<a href="index.html#"><i class="fa fa-vk"></i></a>
+						</p>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+
+<div class="container">
+			<div class="row">
+				<div id="map"></div>
+			</div>
+		</div> <!-- /container -->
+
+	</div><!-- /f -->
+			
+
+	<!-- <div id="c">
+		<div class="container">
+			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+		
+		</div>
+	</div> -->
+	
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	
+
+	
+	<script>
+	
+	</script>
+
+</body>
