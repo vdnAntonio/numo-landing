@@ -1,7 +1,7 @@
 numoApp.controller('systemController',['$scope','$routeParams','$firebaseArray','$routeParams','$http', 'fac', 'eventsFactory',
 		function($scope, $routeParams, $firebaseArray, $routeParams, $http, fac, eventsFactory) {
 
-//------ SERVIE EXAMPLE ------//
+//------ SERVICE EXAMPLE ------//
       fac.getUsers().then( function(data){
         $scope.users = data;
       });
@@ -9,18 +9,18 @@ numoApp.controller('systemController',['$scope','$routeParams','$firebaseArray',
         $scope.events = data;
       });
 
-//------ SERVIE EXAMPLE ------//
+//------ FACTORY EXAMPLE ------//
     /*$scope.events = eventsFactory;*/
 
 	}]);
 numoApp.constant('fbURL', 'https://glaring-torch-515.firebaseio.com/events');
-//------ SERVIE EXAMPLE ------//
+//------ FACTORY EXAMPLE ------//
 numoApp.factory('eventsFactory', function($firebaseArray, fbURL){
     return $firebaseArray(new Firebase(fbURL));
 });
 
 numoApp.constant('gitURL', 'https://api.github.com/');
-//------ SERVIE EXAMPLE ------//
+//------ SERVICE EXAMPLE ------//
 numoApp.service('fac', function($http, $q, gitURL){
   var deffrred = $q.defer();
 
