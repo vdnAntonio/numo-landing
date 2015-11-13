@@ -2,12 +2,19 @@ numoApp.controller('systemController',['$scope','$routeParams','$firebaseArray',
 		function($scope, $routeParams, $firebaseArray, $routeParams, $http, fac, eventsFactory) {
 
 //------ SERVICE EXAMPLE ------//
-      fac.getUsers().then( function(data){
+      /*fac.getUsers().then( function(data){
         $scope.users = data;
       });
       fac.getEvents().then( function(data){
         $scope.events = data;
+      });*/
+
+      //https://api.instagram.com/oauth/authorize/?client_id=3898138cfc434eb09271a5659bf42088&redirect_uri=http://localhost:36510/#/home&response_type=code
+      $http.get('https://api.instagram.com/oauth/authorize/?client_id=3898138cfc434eb09271a5659bf42088&redirect_uri=http://localhost:36510/#/home&response_type=code')
+      .then(function(data){
+         console.log(data);
       });
+
 
 //------ FACTORY EXAMPLE ------//
     /*$scope.events = eventsFactory;*/
