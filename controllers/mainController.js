@@ -15,7 +15,6 @@ numoApp.controller('mainController',['$scope', '$routeParams', '$firebaseArray',
             //$location.path("/home/event");
           });
       };
-<<<<<<< HEAD
      //share functions
       $scope.vk = function(eventW) {
           console.log(eventW)
@@ -74,13 +73,6 @@ numoApp.controller('mainController',['$scope', '$routeParams', '$firebaseArray',
       };*/
 
 	}]);
-=======
-    
-	}]);
-
-
-
->>>>>>> ccbc0759cd87c701e65fb2148b378d19622775ea
 
 
 function initMap(){
